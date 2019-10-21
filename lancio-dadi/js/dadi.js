@@ -23,7 +23,6 @@ function dice(){
   console.log(lancio1)//debug
 }
 
-
 //imposto la funzione che al click fa partire il lancio del secondo dado
 function dice2(){
 lancio2 = Math.floor(Math.random()*6 +1);
@@ -40,6 +39,7 @@ if (lancio2==1) {
 }else if (lancio2==6){
   document.getElementById('risultato-lancio2').innerHTML= "<img src='img/face6.png'>";
 }
+//imposto la stampa di chi ha vinto solo all'interno della funzione del secondo dado
 if(lancio1>lancio2){
   document.getElementById('result').innerHTML = "Vince il giocatore 1";
 }else if(lancio1<lancio2){
