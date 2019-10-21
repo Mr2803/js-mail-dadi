@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -9,30 +9,54 @@
     <title></title>
   </head>
   <body>
-    <div class="container debug text-center">
+    <div class="container text-center">
       <h1>Lancio dei dadi</h1>
-      <div class="row debug align-items-center">
-        <div class="col-6 debug ">
-          <div class="dado1">
+      <div class="row my_height align-items-center justify-content-center">
+        <div class="col-lg-6 mb-3 d-flex justify-content-center">
+          <div class="dado1 d-flex align-items-center justify-content-center">
           <span id="risultato-lancio1"></span>
           </div>
-
-
-
         </div>
-        <div class="col-6 debug">
-          <div class="dado2">
+        <div class="col-lg-6 mb-3 d-flex justify-content-center">
+          <div class="dado2 d-flex align-items-center justify-content-center">
             <span id="risultato-lancio2"></span>
-
           </div>
-
         </div>
-        <button type="button" class="btn btn-primary btn-lg" onclick="dice()">Large</button>
-        <p id="result">prova</p>
-
+        <div class="col-12">
+          <button type="button" class="btn btn-primary btn-lg" onclick="dice()">Lancia i Dadi</button>
+        </div>
+        <div class="col-12">
+          <p id="result"></p>
+        </div>
       </div>
-
+      <footer class="text-center mt-5 p-5 ">
+              <div class="container-fluid">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-sm-6">
+                    <ul class="list-unstyled d-flex">
+                      <li>
+                        <span style="color:white;">Created by Marco Rispoli</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-4">
+                    <ul class="list-unstyled d-flex justify-content-between">
+                      <li>
+                        <a href="https://github.com/Mr2803"><i class="fab fa-github"></i></a>
+                      </li>
+                      <li>
+                        <a href="https://m.facebook.com/marco.rispoli91"><i class="fab fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/marco_rispoli/"><i class="fab fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </footer>
     </div>
+
 
   <script type="text/javascript" src="js/dadi.js"></script>
 
