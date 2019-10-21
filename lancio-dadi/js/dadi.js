@@ -3,7 +3,7 @@
 //creo variabili
 var lancio1,lancio2
 
-//imposto la funzione che al click fa partire lo script del lancio dadi
+//imposto la funzione che al click fa partire il lancio del primo dado
 function dice(){
   //imposto il valore della variabile lancio1 con math-random
   lancio1 = Math.floor(Math.random()*6 +1);
@@ -20,10 +20,11 @@ function dice(){
   }else if (lancio1==6){
     document.getElementById('risultato-lancio1').innerHTML= "<img src='img/face6.png'>";
   }
-console.log(lancio1)
-
+  console.log(lancio1)//debug
 }
 
+
+//imposto la funzione che al click fa partire il lancio del secondo dado
 function dice2(){
 lancio2 = Math.floor(Math.random()*6 +1);
 if (lancio2==1) {
@@ -41,18 +42,14 @@ if (lancio2==1) {
 }
 if(lancio1>lancio2){
   document.getElementById('result').innerHTML = "Vince il giocatore 1";
-  document.getElementById('reset').innerHTML = "Un'altra partita?";
 }else if(lancio1<lancio2){
   document.getElementById('result').innerHTML = "Vince il giocatore 2";
-  document.getElementById('reset').innerHTML = "Un'altra partita?";
 }else{
   document.getElementById('result').innerHTML = "Avete pareggiato";
-  document.getElementById('reset').innerHTML = "Un'altra partita?";
 }
+document.getElementById('reset').innerHTML = "Un'altra partita?";
+console.log(lancio2) //debug
 }
 
-
-
-console.log(lancio2)
 
 //imposto condizioni per variabili secondo lancio
