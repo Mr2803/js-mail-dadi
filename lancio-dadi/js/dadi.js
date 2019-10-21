@@ -4,9 +4,17 @@
 var lancio1,lancio2
 
 //imposto condizioni per variabili primo lancio
-lancio1 = Math.round(Math.random()*5+1);
+function dice1(){
+  lancio1 = Math.round(Math.random()*5+1);
+  document.getElementById('risultato-lancio1').innerHTML = lancio1
+}
+
+
 //imposto condizioni per variabili secondo lancio
-lancio2 = Math.round(Math.random()*5+1);
+function dice2(){
+  lancio2 = Math.round(Math.random()*5+1);
+  document.getElementById('risultato-lancio2').innerHTML = lancio2
+}
 
 //imposto le condizioni
 if(lancio1>lancio2){

@@ -2,9 +2,35 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/dadi.css">
     <title></title>
   </head>
   <body>
+    <div class="container debug text-center">
+      <h1>Lancio dei dadi</h1>
+      <div class="row debug align-items-center">
+        <div class="col-6 debug ">
+          <div class="dado1">
+          <span id="risultato-lancio1"></span>
+          </div>
+          <button type="button" class="btn btn-primary btn-lg" onclick="dice1()">Large</button>
+
+
+        </div>
+        <div class="col-6 debug">
+          <div class="dado2">
+            <span id="risultato-lancio2"></span>
+
+          </div>
+          <button type="button" class="btn btn-primary btn-lg" onclick="dice2()">Large</button>
+        </div>
+
+      </div>
+
+    </div>
 
   <script type="text/javascript" src="js/dadi.js"></script>
 
