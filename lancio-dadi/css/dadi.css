@@ -4,12 +4,6 @@
   box-sizing: border-box;
 }
 
-/* .debug{
-  border : 1px solid black;
-} */
-
-
-
 body{
   background-image: url(../img/las-vegas.jpg);
   background-attachment: fixed;
@@ -36,11 +30,8 @@ body{
   border-radius: 10%;
 }
 
-
-.dado1 span,
-.dado2 span{
-  font-size: 7em;
-  font-weight: bold;
+#result{
+  font-size: 25px;
 }
 
 footer{

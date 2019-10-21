@@ -15,55 +15,54 @@
 
       </div>
       <div class="row my_height mt-5 align-items-center justify-content-center">
-
-        <div class="col-lg-6 mb-3 d-flex justify-content-center">
-          <div class="dado1 d-flex align-items-center justify-content-center">
-          <span id="risultato-lancio1"></span>
+        <div class="col-lg-6 mb-3 d-flex flex-column align-items-center ">
+          <h2 style="color:white;">Giocatore 1</h2>
+          <div class="dado1 d-flex justify-content-center">
+            <span id="risultato-lancio1"></span>
           </div>
+          <button type="button" class="btn btn-primary btn-lg mt-2" onclick="dice()"><span>Lanciate i dadi</span> <i class="fas fa-dice"></i></button>
         </div>
-        <div class="col-lg-6 mb-3 d-flex justify-content-center">
-          <div class="dado2 d-flex align-items-center justify-content-center">
+        <div class="col-lg-6 mb-3 d-flex flex-column align-items-center">
+          <h2 style="color:white;">Giocatore 2</h2>
+          <div class="dado2 d-flex justify-content-center">
             <span id="risultato-lancio2"></span>
           </div>
+            <button type="button" class="btn btn-primary btn-lg mt-2" onclick="dice2()"><span>Lanciate i dadi</span> <i class="fas fa-dice"></i>
         </div>
-        <div class="col-12">
-          <button type="button" class="btn btn-primary btn-lg" onclick="dice()">Lancia i Dadi</button>
+        <div class="reset">
+        <button type="reset" class="btn btn-primary btn-lg mt-2" value="Refresh  Page" onclick="window.location.reload();" id="reset"></button>
         </div>
         <div class="col-12">
           <p id="result" style="color:white"></p>
         </div>
       </div>
       <footer class="text-center mt-5 p-5 ">
-              <div class="container-fluid">
-                <div class="row justify-content-between align-items-center">
-                  <div class="col-sm-6">
-                    <ul class="list-unstyled d-flex">
-                      <li>
-                        <span style="color:white;">Created by Marco Rispoli</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-sm-4">
-                    <ul class="list-unstyled d-flex justify-content-between">
-                      <li>
-                        <a href="https://github.com/Mr2803"><i class="fab fa-github"></i></a>
-                      </li>
-                      <li>
-                        <a href="https://m.facebook.com/marco.rispoli91"><i class="fab fa-facebook"></i></a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com/marco_rispoli/"><i class="fab fa-instagram"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </footer>
+        <div class="container-fluid">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-sm-6">
+              <ul class="list-unstyled d-flex">
+                <li>
+                  <span style="color:white;">Created by Marco Rispoli</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <ul class="list-unstyled d-flex justify-content-between">
+                <li>
+                  <a href="https://github.com/Mr2803"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                  <a href="https://m.facebook.com/marco.rispoli91"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/marco_rispoli/"><i class="fab fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-
-
-  <script type="text/javascript" src="js/dadi.js"></script>
-
-
+    <script type="text/javascript" src="js/dadi.js"></script>
   </body>
 </html>
