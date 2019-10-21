@@ -9,6 +9,7 @@
 } */
 
 
+
 body{
   background-image: url(../img/las-vegas.jpg);
   background-attachment: fixed;
@@ -20,11 +21,6 @@ body{
   min-height: 550px;
   background: rgba(41, 34, 36, 0.7);
   border-radius: 10px;
-}
-
-
-.col-6{
-  height: 250px;
 }
 
 .dado1,
@@ -50,6 +46,8 @@ body{
 footer{
   background: rgba(41, 37, 41, 0.95);
   border-radius: 10px;
+  margin-right: -15px;
+  margin-left: -15px
 }
 
 a{
