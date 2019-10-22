@@ -1,3 +1,6 @@
+// NOTE: TRACCIA
+//Chiedi all’utente la sua email controlla che sia nella lista di chi può accedere e stampa un messaggio appropriato;
+
 //dichiarazione array
 var email =["email1@gmail.com","email2@gmail.com","email3@gmail.com","email4@gmail.com","email5@gmail.com"];
 console.log("mail valide : " + email);
