@@ -7,17 +7,15 @@ var emailUser = prompt("inserisci una mail");
 console.log("la mail inserita dall'utente è:" + emailUser);
 
 //imposto variabile di base
-var messaggioTrovato = "non puoi entrare";
+var messaggioTrovato = document.getElementById('enterOrNot').innerHTML="Mi dispiace ma non sei invitato";
 
 //imposto il ciclo
 for(i=0; i < email.length; i++){
   //imposto condizione del ciclo
   if(email[i] == emailUser){
-    messaggioTrovato= "puoi entrare";
+    messaggioTrovato= document.getElementById('enterOrNot').innerHTML="Benvenuto";
   }
 }
-
-console.log(messaggioTrovato)
 
 
 
