@@ -9,7 +9,7 @@ function insertMail(){
 var emailUser = prompt("inserisci una mail");
 var messaggioTrovato;
  //imposto condizione del ciclo per verificare se la mail inserita è in lista
- for(i=0; i < email.length; i++){
+ for(var i=0; i < email.length; i++){
    if(email[i] == emailUser){
      messaggioTrovato=true;
     }
