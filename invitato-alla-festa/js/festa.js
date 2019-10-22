@@ -6,7 +6,7 @@ console.log("mail valide : " + email);
 
 //imposto la funzione che al click fa partire il prompt che domanda la mail
 function insertMail(){
-var emailUser = prompt("inserisci una mail");
+var emailUser = prompt("Inserisci la tua mail per verificare di essere invitato");
 var messaggioTrovato;
  //imposto condizione del ciclo per verificare se la mail inserita è in lista
  for(var i=0; i < email.length; i++){
