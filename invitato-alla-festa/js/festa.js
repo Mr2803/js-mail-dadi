@@ -12,7 +12,7 @@ var messaggioTrovato;
  for(i=0; i < email.length; i++){
    if(email[i] == emailUser){
      messaggioTrovato=true;
-   }
+    }
   }
   if(messaggioTrovato == true){
     document.getElementById('newMailOk').innerHTML= emailUser;

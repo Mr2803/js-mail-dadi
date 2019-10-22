@@ -43,6 +43,10 @@ body{
   color:blue;
 }
 
+#newMailNot{
+  color:red;
+}
+
 footer .container{
   background: rgba(41, 37, 41, 0.95);
   border-radius: 10px;
