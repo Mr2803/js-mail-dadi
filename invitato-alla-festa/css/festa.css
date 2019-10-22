@@ -34,6 +34,16 @@ body{
   background-image: repeating-linear-gradient(white 0px, white 24px, steelblue 25px);
 }
 
+.my_style-ul li{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#newMailOk{
+  color:blue;
+}
+
+
 
 footer .container{
   background: rgba(41, 37, 41, 0.95);

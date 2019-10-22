@@ -9,16 +9,24 @@ console.log("mail valide : " + email);
 function insertMail(){
   var emailUser = prompt("inserisci una mail");
   var messaggioTrovato = document.getElementById('enterOrNot').innerHTML="Mi dispiace ma non sei invitato";
-  //imposto condizione del ciclo
+  document.getElementById('newMailNot').innerHTML= emailUser;
+  //imposto condizione del ciclo per verificare se la mail inserita è in lista
   for(i=0; i < email.length; i++){
     if(email[i] == emailUser){
       messaggioTrovato= document.getElementById('enterOrNot').innerHTML="Benvenuto";
-      document.getElementById('newmail').innerHTML= emailUser;
+      document.getElementById('newMailOk').innerHTML= emailUser;
     }
   }
 }
 
 
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//NOTE:
 // chiedo all'utente di inserire la sua mail
 // var emailUser = prompt("inserisci una mail");
 // console.log("la mail inserita dall'utente è:" + emailUser);
