@@ -16,7 +16,22 @@ function dice(){
             console.log(face[i])//debug
         }
     }
-  }
+
+  // if (lancio1==1) {
+  //   document.getElementById('risultato-lancio1').innerHTML= face[0];
+  // }else if (lancio1==2){
+  //   document.getElementById('risultato-lancio1').innerHTML= face[1];
+  // }else if (lancio1==3){
+  //   document.getElementById('risultato-lancio1').innerHTML= face[2];
+  // }else if (lancio1==4){
+  //   document.getElementById('risultato-lancio1').innerHTML= face[3];
+  // }else if (lancio1==5){
+  //   document.getElementById('risultato-lancio1').innerHTML= face[4];
+  // }else if (lancio1==6){
+  //   document.getElementById('risultato-lancio1').innerHTML= face[5];
+  // }
+  // console.log(lancio1)//debug
+}
 
 //imposto la funzione che al click fa partire il lancio del secondo dado
 function dice2(){
@@ -28,6 +43,20 @@ for (var j=0; j<face.length; j++) {
         console.log(face[j])//debug
       }
   }
+// if (lancio2==1) {
+//   document.getElementById('risultato-lancio2').innerHTML= face[0];
+// }else if (lancio2==2){
+//   document.getElementById('risultato-lancio2').innerHTML= face[1];
+// }else if (lancio2==3){
+//   document.getElementById('risultato-lancio2').innerHTML= face[2];
+// }else if (lancio2==4){
+//   document.getElementById('risultato-lancio2').innerHTML= face[3];
+// }else if (lancio2==5){
+//   document.getElementById('risultato-lancio2').innerHTML= face[4];
+// }else if (lancio2==6){
+//   document.getElementById('risultato-lancio2').innerHTML= face[5];
+// }
+//imposto la stampa di chi ha vinto solo all'interno della funzione del secondo dado
 if(lancio1>lancio2){
   document.getElementById('result').innerHTML = "Vince il giocatore 1";
 }else if(lancio1<lancio2){
